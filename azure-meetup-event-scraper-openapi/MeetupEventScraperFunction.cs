@@ -64,7 +64,8 @@ namespace azure_meetup_event_scraper_openapi
                     }
 
                     groupEvent.EventTypeId = groupEvent.Title.Contains("virtual", StringComparison.OrdinalIgnoreCase) ? EventType.VBA : EventType.NBA;
-                    groupEvent.EventTypeName = groupEvent.Title.Contains("virtual", StringComparison.OrdinalIgnoreCase) ? EventType.VBA.ToString() : EventType.NBA.ToString();
+                    groupEvent.EventTypeName = groupEvent.Title.Contains("virtual", StringComparison.OrdinalIgnoreCase) ? EventType.VBA.ToString() : EventType.NBA.ToString()
+                    ;
 
                     groupEvents.Add(groupEvent);
                 }
